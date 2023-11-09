@@ -276,12 +276,12 @@
     </div>
   </section>
 
-  <section class="section"  style="background-color:#efeff081">
+  <section class="section">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3">🌋 LLaVA-Plus Capabilities enabled by Plug and Learning to Use Skills</h2>
+          <h4 class="title is-5">LLaVA-Plus Capabilities enabled by Plug and Learning to Use Skills</h2>
           <div class="content has-text-justified">
             <p>
               <!-- image -->
@@ -295,7 +295,7 @@
     </div>
   </section>
 
-  <section class="section" >
+  <section class="section"  style="background-color:#efeff081">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
@@ -324,11 +324,11 @@
 
 
 
-<section class="section"  style="background-color:#efeff081">
+<section class="section">
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3">🌋 LLaVA-Plus Model Pipeline</h2>
+      <h2 class="title is-3">🌋 LLaVA-Plus Human-AI Interaction Pipeline</h2>
     </div>
   </div>
   <!-- </div> -->
@@ -338,6 +338,13 @@
   <div class="columns is-centered">
     <div class="column is-full-width">
       <div class="content has-text-justified"> 
+
+          <centering>
+            <div style="text-align: center;">
+              <img id="teaser" width="60%" src="images/llava-plus-4-steps.png">     
+            </div>
+          </centering> 
+
         <p>
          <b> LLaVA-Plus enables tool use with four steps.</b>
           <ol>① Humans provide a task instruction $X_{{q}}$ related to an image $I_{{q}}$.</ol>
@@ -349,13 +356,14 @@
           <ol>Humans: $I_q$<\n> $X_{{q}}$ < STOP> Assistant: <span style="color: #149308;">$X_{{skill\_use}}$</span></ol>
             <ol>Humans: $X_{{skill\_result}}$< STOP> Assistant: <span style="color: #149308;">$X_{{anwser}}$</span></ol>
           </div>
-         Only the green sub-sequences (or tokens) are used to compute the loss, and thus the model learns to predict skill use, answers, and when to stop.
-          <centering>
-            <div style="text-align: center;">
-              <img id="teaser" width="50%" src="images/llava-plus-4-steps.png">     
-            </div>
-          </centering> 
+         Only the green sub-sequences (or tokens) are used to compute the loss, and thus the model learns to predict skill use, answers, and when to stop. One example of the training data sequence is shown as below.
+
         </p>
+  <div style="text-align: center;">
+      <h3 class="title is-5"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/3515/3515174.png"> Training Data Example</h2>
+    <img id="teaser" width="70%" src="images/llava-plus-example.png">     
+  </div>
+
       </div>
 
                 
@@ -365,18 +373,6 @@
 </section>
   
 
-
-<section class="section">
-  <!-- Results. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/3515/3515174.png"> Training Data Example</h2>
-    </div>
-  </div>
-  <div style="text-align: center;">
-    <img id="teaser" width="50%" src="images/llava-plus-example.png">     
-  </div>
-</section>
 
 
 
